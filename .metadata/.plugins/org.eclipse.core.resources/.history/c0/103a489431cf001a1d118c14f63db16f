@@ -1,0 +1,16 @@
+package com.hk.rest.webservices.userservice.impl;
+
+import com.hk.rest.webservices.ui.exceptions.UserServiceException;
+import com.hk.rest.webservices.ui.model.request.UserDetailsRequest;
+import com.hk.rest.webservices.ui.model.response.UserRest;
+import com.hk.rest.webservices.userservice.UserService;
+
+public class UserServiceImpl implements UserService{
+
+
+		@Override
+		public UserRest createUser(UserDetailsRequest userDetail) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+}

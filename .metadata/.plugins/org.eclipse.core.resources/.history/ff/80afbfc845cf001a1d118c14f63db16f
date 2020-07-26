@@ -1,0 +1,14 @@
+package com.hk.rest.webservices.common;
+
+import java.util.UUID;
+
+public class Utility {
+	
+	public String generateUserId() {
+	
+		String userID = UUID.randomUUID().toString();
+		return userID;
+	}
+	
+	
+}

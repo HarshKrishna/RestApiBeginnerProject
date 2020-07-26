@@ -1,0 +1,32 @@
+package com.hk.rest.webservices.userservice.impl;
+
+import java.util.HashMap;
+import java.util.UUID;
+
+import com.hk.rest.webservices.ui.exceptions.UserServiceException;
+import com.hk.rest.webservices.ui.model.request.UserDetailsRequest;
+import com.hk.rest.webservices.ui.model.response.UserRest;
+import com.hk.rest.webservices.userservice.UserService;
+
+public class UserServiceImpl implements UserService{
+		
+		Map<UserRest> users;
+
+		@Override
+		public UserRest createUser(UserDetailsRequest userDetail) {
+			UserRest returnUser = new UserRest();
+			returnUser.setFirstName(userDetails.getFirstName());
+			returnUser.setLastName(userDetails.getLastName());
+			returnUser.setEmail(userDetails.getEmail());
+
+			String userID = UUID.randomUUID().toString();
+			returnUser.setUserId(userID);
+
+			if (users == null) {
+				users = new HashMap<>();
+				users.put(userID, returnUser);
+			}
+			
+			return null;
+		}
+}

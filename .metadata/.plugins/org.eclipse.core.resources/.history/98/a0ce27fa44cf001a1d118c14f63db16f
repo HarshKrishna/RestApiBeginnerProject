@@ -1,0 +1,5 @@
+package com.hk.rest.webservices.common;
+
+public class Utility {
+
+}

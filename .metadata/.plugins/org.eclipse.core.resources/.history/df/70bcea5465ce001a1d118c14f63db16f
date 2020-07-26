@@ -1,0 +1,5 @@
+package com.hk.rest.webservices.ui.model.response;
+
+public class UserRest {
+
+}

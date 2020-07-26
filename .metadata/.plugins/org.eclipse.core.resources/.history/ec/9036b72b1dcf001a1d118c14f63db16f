@@ -1,0 +1,5 @@
+package com.hk.rest.webservices.ui.exceptions;
+
+public class AppExceptionHandler {
+
+}
